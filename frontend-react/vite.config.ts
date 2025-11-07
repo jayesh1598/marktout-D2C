@@ -50,7 +50,7 @@
       },
     },
     build: {
-      target: 'dist',
+      target: 'src',
       outDir: 'build',
     },
     server: {
