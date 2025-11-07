@@ -52,7 +52,7 @@
     },
    build: {
     target: 'esnext',  // <- FIX: valid build target (or 'esnext' if you prefer)
-    outDir: 'build',   // keep 'build' if you use vercel.json below
+    outDir: 'dist',   // keep 'build' if you use vercel.json below
     emptyOutDir: true,
   },
     server: {
