@@ -8,6 +8,7 @@
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
+        '@': path.resolve(__dirname, './src'),
         'vaul@1.1.2': 'vaul',
         'sonner@2.0.3': 'sonner',
         'recharts@2.15.2': 'recharts',
@@ -49,10 +50,11 @@
         '@': path.resolve(__dirname, './src'),
       },
     },
-    build: {
-      target: 'src',
-      outDir: 'build',
-    },
+   build: {
+    target: 'esnext',  // <- FIX: valid build target (or 'esnext' if you prefer)
+    outDir: 'build',   // keep 'build' if you use vercel.json below
+    emptyOutDir: true,
+  },
     server: {
       port: 3000,
       open: true,
