@@ -50,7 +50,7 @@
       },
     },
     build: {
-      target: 'esnext',
+      target: 'dist',
       outDir: 'build',
     },
     server: {
